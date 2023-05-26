@@ -1,0 +1,35 @@
+<html>
+    <head>
+    <title>CEP Informations</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link rel="shortcut icon" href="src/icons8-endereço-16.png" type="image/x-icon">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="src/script.js"></script>
+    </head>
+    <h1>Seja bem-vindo!</h1>
+    <h2>Coloque seu CEP e aperte em buscar para aparecer as informações</h2>
+    <img src="src/imagem-globo.png" alt="imagem">
+
+    <body>
+      <div class="formulario">
+          <form method="get" action=".">
+            <label><strong>Cep:</strong>
+            <input name="cep" type="text" id="cep" value="" size="10" maxlength="9"
+                   onblur="pesquisacep(this.value);" /></label><br />
+            <label><strong>Rua:</strong>
+            <input name="rua" type="text" id="rua" size="60" /></label><br />
+            <label><strong>Bairro:</strong>
+            <input name="bairro" type="text" id="bairro" size="40" /></label><br />
+            <label><strong>Cidade:</strong>
+            <input name="cidade" type="text" id="cidade" size="40" /></label><br />
+            <label><strong>Estado:</strong>
+            <input name="uf" type="text" id="uf" size="2" /></label><br />
+            
+          
+          </form>
+          <button>Buscar</button>
+      </div>
+    </body>
+    <footer>Página criada por Caio Silva</footer>
+
+    </html>
